@@ -1,0 +1,26 @@
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 38%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content img {
+  height: 30px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-content p {
+  padding: 0;
+  margin: 0;
+}

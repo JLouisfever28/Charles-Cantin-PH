@@ -1,0 +1,47 @@
+.tarifs-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 5px;
+}
+
+.tarifs-container .card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #666E66;
+  overflow-y: hidden;
+  width: auto;
+}
+
+.tarifs-container .card:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.tarifs-container .card-title {
+  margin-top: 0;
+  text-align: center;
+  font-size: large;
+  padding: 5px;
+  background-color: rgb(71, 85, 94);
+  border-bottom: 1px solid #e9ecef;
+}
+
+.tarifs-container .card-text {
+  padding: 5px;
+}
+
+.tarifs-container .card-text h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.tarifs-container .card-text ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.tarifs-container .card-text li {
+  margin-bottom: 2px;
+}
