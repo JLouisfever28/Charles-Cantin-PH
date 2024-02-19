@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 import Logo from "../Images/CharlesLogo.png"
 
 function Header () {
 
-    const [homePage, setHomePage] = useState("/")
-    const [galerie, setGaleriePage] = useState("/")
-    const [tarifsPrestations, setTarifsPrestationsPage] = useState("/")
-    const [contact, setContactPage] = useState("/")
+    const homePage = "/Accueil";
+    const galerie = "./galerie";
+    const tarifsPrestations ="/TarifsPrestations";
+    const contact = "/Contact";
     return (
             <div className="container">
             <div className="logo">
@@ -22,16 +22,16 @@ function Header () {
             <div className="menu">
                 <ul>
                     <li>
-                        <Link to={homePage} alt="Accueil" onClick={() => setHomePage("/Accueil")}>Accueil</Link>
+                        <Link to={homePage} alt="Accueil">Accueil</Link>
                     </li>
                     <li>
-                        <Link to={galerie} alt="galerie" onClick={() => setGaleriePage("/Galerie")}>Galerie</Link>
+                        <Link to={galerie} alt="Galerie">Galerie</Link>
                     </li>
                     <li>
-                        <Link to={tarifsPrestations} alt="Tarifs&Prestations" onClick={() => setTarifsPrestationsPage("/TarifsPrestations")}>Tarifs&Prestations</Link>
+                        <Link to={tarifsPrestations} alt="Tarifs&Prestations">Tarifs&Prestations</Link>
                     </li>
                     <li>
-                         <Link to={contact} alt="contact" onClick={() => setContactPage("/contact")}>Contact</Link>
+                         <Link to={contact} alt="contact">Contact</Link>
                     </li>
                 </ul>
             </div>

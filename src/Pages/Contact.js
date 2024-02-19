@@ -25,13 +25,13 @@ function ContactForm() {
       errors={state.errors}
       />
       <input 
-      id="prenom"
-      type="prenom"
-      placeholder='Prenom'
+      id="prénom"
+      type="prénom"
+      placeholder='Prénom'
       />
       <ValidationError
-      prefix="Prenom"
-      field="prenom"
+      prefix="Prénom"
+      field="prénom"
       errors={state.errors}
       />
       </div>
